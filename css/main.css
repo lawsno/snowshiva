@@ -1,0 +1,250 @@
+/* media query variables */
+/* Fonts */
+/* Color variables - so you know what's what */
+/* Cast colors to semantic variables, so you know what goes where */
+/* Text effects & shadows/highlights */
+/* media query variables */
+/* Fonts */
+/* Color variables - so you know what's what */
+/* Cast colors to semantic variables, so you know what goes where */
+/* Text effects & shadows/highlights */
+body.resume {
+  background-color: #f3f3f3;
+  color: #474747; }
+  body.resume a {
+    color: #222222; }
+  body.resume header h1 {
+    color: #474747; }
+  body.resume section {
+    width: 96.55172%;
+    padding: 3.44828%; }
+  body.resume ul {
+    position: relative; }
+  body.resume dt {
+    font-weight: bold; }
+  body.resume dd ul > li {
+    font-weight: bold;
+    color: black; }
+    body.resume dd ul > li ul > li {
+      font-weight: normal;
+      color: #474747; }
+  body.resume .experience-logo {
+    position: absolute;
+    left: 100%; }
+  body.resume footer a {
+    color: #f3f3f3; }
+  @media only screen and (min-width: 480px) {
+    body.resume section {
+      width: 83.05085%;
+      float: left;
+      margin-right: 1.69492%;
+      margin-left: 6.77966%; } }
+  @media only screen and (min-width: 768px) {
+    body.resume section {
+      width: 66.10169%;
+      float: left;
+      margin-right: 1.69492%;
+      margin-left: 15.25424%; } }
+
+/* Default styles are for mobile up to 480px width */
+html {
+  min-height: 100%;
+  position: relative;
+  overflow-y: scroll; }
+
+body {
+  font-size: 100%;
+  line-height: 18px;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  min-width: 300px;
+  max-width: 80em;
+  margin-left: auto;
+  margin-right: auto;
+  background: #474747 url("/img/01x4.png") fixed;
+  color: #999999; }
+  body:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+ul li {
+  margin: 0.5em; }
+
+.no-scroll {
+  overflow: hidden; }
+
+a {
+  text-decoration: none;
+  outline: none;
+  color: #f3f3f3; }
+  a:visited {
+    text-decoration: none;
+    outline: none;
+    color: #f3f3f3; }
+  a:hover {
+    text-decoration: underline; }
+
+header {
+  display: block; }
+  header h1 {
+    color: #222222;
+    font-family: "Slabo 27px", serif;
+    font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: 1.2em; }
+  header h2 {
+    font-weight: 400;
+    color: black; }
+
+nav, header, footer {
+  text-align: center; }
+
+nav, header, section {
+  width: 100%;
+  float: left;
+  margin-left: 0;
+  margin-right: 0; }
+
+nav {
+  background: #3a3a3a;
+  background: linear-gradient(to bottom, #897f82 0%, #474747 100%);
+  border-radius: 5px;
+  display: block;
+  height: 39px;
+  position: relative;
+  width: 96.55172%;
+  margin-left: 1.69492%;
+  margin-top: 1.5em;
+  text-align: center;
+  box-shadow: 0 2px 2px #222222; }
+  nav a {
+    color: #222222;
+    display: inline-block;
+    height: 39px;
+    line-height: 37px;
+    padding: 0 15px; }
+    nav a:hover {
+      transition: background-color 0.3s;
+      background-color: #6b6b6b;
+      text-decoration: none;
+      box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2), -1px 0 0 rgba(255, 255, 255, 0.2), 1px 0 1px rgba(0, 0, 0, 0.2) inset, -1px 0 1px rgba(0, 0, 0, 0.2) inset; }
+    nav a.active {
+      color: #222222;
+      background: #474747;
+      box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2), -1px 0 0 rgba(255, 255, 255, 0.2), 1px 0 1px rgba(0, 0, 0, 0.2) inset, -1px 0 1px rgba(0, 0, 0, 0.2) inset; }
+    nav a:visited {
+      color: #222222; }
+    nav a.active:visited {
+      color: #897f82; }
+
+section figure {
+  border-radius: 1em;
+  display: inline-block;
+  margin: 1.69492% 0 0 1.69492%;
+  width: 96.55172%; }
+  section figure img {
+    border-radius: 0.4em;
+    width: 100%; }
+
+footer {
+  float: left;
+  position: static;
+  font-size: 0.8em;
+  color: #897f82;
+  border-top: 4px solid black;
+  background-color: #222222;
+  background-color: rgba(34, 34, 34, 0.95);
+  padding: 1.69492%;
+  width: 96.55172%; }
+
+a.to-resume, a.to-portfolio {
+  color: #897f82;
+  font-family: "Slabo 27px", serif;
+  font-size: 1em;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5em 1em;
+  border-radius: 0 0 0.4em 0;
+  background-color: #f3f3f3;
+  text-align: center;
+  box-shadow: 2px 2px 2px 2px #3a3a3a; }
+  a.to-resume span, a.to-portfolio span {
+    font-size: 2em;
+    line-height: 0.5em;
+    vertical-align: top; }
+  a.to-resume:hover, a.to-portfolio:hover {
+    text-decoration: none;
+    background-color: #897f82;
+    color: #f3f3f3;
+    transition: background-color 0.3s, color 0.3s; }
+
+a.to-portfolio {
+  left: auto;
+  right: 0;
+  border-radius: 0 0 0 0.4em;
+  box-shadow: none;
+  border: 1px solid #897f82;
+  border-top: 0;
+  border-right: 0; }
+
+@media only screen and (min-width: 480px) {
+  body {
+    margin-bottom: 8.47458%; }
+
+  section {
+    padding: 0.84746%;
+    padding-bottom: 1.69492%;
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 98.30508%; }
+    section figure {
+      margin: 1.69492% 0 0 1.69492%;
+      width: 47.11173%; }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0; } }
+@media only screen and (min-width: 768px) {
+  nav, header, section {
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 8.47458%; }
+
+  section {
+    padding: 0.84746%;
+    padding-bottom: 1.69492%;
+    width: 83.05085%;
+    float: left;
+    margin-right: 1.69492%;
+    width: 81.35593%; }
+    section figure {
+      margin: 1.69492% 0 0 1.69492%;
+      width: 30.75406%; }
+
+  nav {
+    width: 78.81356%;
+    margin-left: 10.55325%; } }
+/* Featherlight lightbox overrides */
+.featherlight div.featherlight-content {
+  padding: 10px;
+  border: 3px solid #3a3a3a;
+  border-radius: 0.4em;
+  background-color: #474747;
+  color: #f3f3f3;
+  max-height: 90%; }
+  .featherlight div.featherlight-content h1 {
+    font-family: "Slabo 27px", serif;
+    font-weight: normal; }
+  .featherlight div.featherlight-content .featherlight-close-icon {
+    position: fixed; }
+
+/* mix default style for items */
+#Container .mix {
+  display: none; }

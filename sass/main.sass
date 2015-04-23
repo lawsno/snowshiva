@@ -1,0 +1,196 @@
+@import variables
+@import susy
+@import resume
+
+/* Default styles are for mobile up to 480px width */
+
+html
+  min-height: 100%
+  position: relative
+  overflow-y: scroll
+
+
+body
+  font-size: 100%
+  line-height: 18px
+  margin: 0
+  font-family: $body-font
+  min-width: 300px
+  @include container(80em)
+  background: $background url('/img/01x4.png') fixed
+  color: $grey1
+
+ul
+  li
+    margin: .5em
+  
+.no-scroll
+  overflow: hidden
+
+a
+  text-decoration: none
+  outline: none
+  color: $white
+  &:visited
+    text-decoration: none
+    outline: none
+    color: $white
+  &:hover
+    text-decoration: underline
+
+header
+  display: block
+  h1
+    color: $grey5
+    font-family: $title-font
+    font-size: 2em
+    margin-top: 2em
+    margin-bottom: 1.2em
+  h2
+    font-weight: 400
+    color: $black
+
+nav, header, footer
+  text-align: center
+
+nav, header, section
+  @include span(12)
+
+nav
+  background: $grey4
+  background: linear-gradient(to bottom, $grey2 0%, $grey3 100%)
+  border-radius: 5px
+  display: block
+  height: 39px
+  position: relative
+  width: span(12) - gutter(6)
+  margin-left: gutter()
+  margin-top: 1.5em
+  text-align: center
+  box-shadow: 0 2px 2px $grey5
+  a
+    color: $nav-link
+    display: inline-block
+    height: 39px
+    line-height: 37px
+    padding: 0 15px
+
+    &:hover
+      transition: background-color .3s
+      background-color: darken($grey1, 18%)
+      text-decoration: none
+      box-shadow: $thin-box-shadow-inset
+    &.active
+      color: $nav-link
+      background: $grey3
+      box-shadow: $thin-box-shadow-inset
+    &:visited
+      color: $nav-link
+    &.active:visited
+      color: $grey2
+
+section
+  figure
+    border-radius: 1em
+    display: inline-block
+    margin: gutter() 0 0 gutter()
+    width: span(12) - gutter(6)
+    img
+      border-radius: .4em
+      width: 100%
+
+footer
+  float: left
+  position: static
+  font-size: .8em
+  color: $grey2
+  border-top: 4px solid $black
+  background-color: $grey5
+  background-color: $grey5-trans
+  padding: gutter()
+  width: span(12) - gutter(6)
+
+a.to-resume, a.to-portfolio
+  color: $grey2
+  font-family: $title-font
+  font-size: 1em
+  display: inline-block
+  position: fixed
+  top: 0
+  left: 0
+  padding: .5em 1em
+  border-radius:  0 0 .4em 0 
+  background-color: $white
+  text-align: center
+  box-shadow: 2px 2px 2px 2px $grey4
+  span
+    font-size: 2em
+    line-height: .5em
+    vertical-align: top
+  &:hover
+    text-decoration: none
+    background-color: $grey2
+    color: $white
+    transition: background-color .3s, color .3s
+a.to-portfolio
+  left: auto
+  right: 0
+  border-radius: 0 0 0 .4em
+  box-shadow: none
+  border: 1px solid $grey2
+  border-top: 0
+  border-right: 0
+
+@media #{$phone-tablet}
+  body
+    margin-bottom: span(1) + gutter()
+  section
+    padding: gutter()/2
+    padding-bottom: gutter()
+    @include span(12)
+    width: span(12) - gutter()
+    figure
+      margin: gutter() 0 0 gutter()
+      width: span(6) - gutter(10)
+  footer
+    position: fixed
+    bottom: 0
+    left: 0
+
+@media #{$tablet-desktop}
+  nav, header, section
+    @include span(10)
+    margin-left: span(1 of 12) + gutter()
+  section
+    padding: gutter()/2
+    padding-bottom: gutter()
+    @include span(10 of 12)
+    width: span(10) - gutter()
+    figure
+      margin: gutter() 0 0 gutter()
+      width: span(3.38 of 10) - gutter(12)
+  nav
+    width: span(9.5)
+    margin-left: span(1 of 12) + gutter(5.5)
+
+/* Featherlight lightbox overrides */
+.featherlight
+  div.featherlight-content
+    padding: 10px
+    border: 3px solid $grey4
+    border-radius: .4em
+    background-color: $grey3
+    color: $white
+    max-height: 90%
+    h1
+      font-family: $title-font
+      font-weight: normal
+    .featherlight-close-icon
+      position: fixed
+
+/* mix default style for items */
+#Container .mix
+  display: none
+
+
+    

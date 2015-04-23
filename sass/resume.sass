@@ -1,0 +1,43 @@
+@import susy
+@import variables
+
+body.resume
+  background-color: $white
+  color: $grey3
+  a
+    color: $grey5
+  header
+    h1
+      color: $grey3
+  section
+    width: span(12 of 12) - gutter(6)
+    padding: gutter(6)
+  ul 
+    position: relative
+  dt 
+    font-weight: bold
+  dd ul > li 
+    font-weight: bold
+    color: black
+    ul > li
+      font-weight: normal
+      color: $grey3
+
+  .experience-logo
+    position: absolute
+    left: span(12)
+
+  footer
+    a
+      color: $white
+
+
+  @media #{$phone-tablet}
+    section
+      @include span(10 of 12)
+      margin-left: span(1)
+
+  @media #{$tablet-desktop}
+    section
+      @include span(8 of 12)
+      margin-left: span(2)
