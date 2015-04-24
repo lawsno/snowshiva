@@ -1,8 +1,6 @@
-@import variables
-@import susy
 @import resume
 
-/* Default styles are for mobile up to 480px width */
+// Default styles are for mobile up to 480px width
 
 html
   min-height: 100%
@@ -59,7 +57,6 @@ nav, header, section
 
 nav
   background: $grey4
-  background: linear-gradient(to bottom, $grey2 0%, $grey3 100%)
   border-radius: 5px
   display: block
   height: 39px
@@ -75,7 +72,6 @@ nav
     height: 39px
     line-height: 37px
     padding: 0 15px
-
     &:hover
       transition: background-color .3s
       background-color: darken($grey1, 18%)
@@ -96,9 +92,11 @@ section
     display: inline-block
     margin: gutter() 0 0 gutter()
     width: span(12) - gutter(6)
+
     img
       border-radius: .4em
       width: 100%
+      box-shadow: 0 2px 2px $grey5
 
 footer
   float: left
@@ -109,7 +107,7 @@ footer
   background-color: $grey5
   background-color: $grey5-trans
   padding: gutter()
-  width: span(12) - gutter(6)
+  width: 100%
 
 a.to-resume, a.to-portfolio
   color: $grey2
@@ -177,8 +175,17 @@ a.to-portfolio
     width: span(9.5)
     margin-left: span(1 of 12) + gutter(5.5)
 
-/* Featherlight lightbox overrides */
+// Featherlight lightbox overrides
 .featherlight
+  //scrollbars for featherlight
+  ::-webkit-scrollbar
+    width: 3px
+  ::-webkit-scrollbar-track
+    background-color: rgba(0,0,0,0.5)
+    border-radius: 4px
+  ::-webkit-scrollbar-thumb
+    background-color: rgba(145,145,145,0.8)
+    border-radius: 4px
   div.featherlight-content
     font-size: .9em
     padding: 10px
@@ -211,8 +218,10 @@ a.to-portfolio
       color: $grey2
 
 
-/* mixitup default style for items */
+// mixitup default style for items
 #Container .mix
   display: none
+
+
 
     
