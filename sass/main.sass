@@ -18,6 +18,7 @@ body
   min-width: 300px
   @include container(80em)
   background: $background url('/img/01x4.png') fixed
+  transition: background-color .5s
   color: $grey1
 
 ul
@@ -156,6 +157,9 @@ a.to-portfolio
     position: fixed
     bottom: 0
     left: 0
+  .featherlight
+    div.featherlight-content
+      width: 60%
 
 @media #{$tablet-desktop}
   nav, header, section
@@ -176,21 +180,39 @@ a.to-portfolio
 /* Featherlight lightbox overrides */
 .featherlight
   div.featherlight-content
+    font-size: .9em
     padding: 10px
     border: 3px solid $grey4
     border-radius: .4em
     background-color: $grey3
-    color: $white
-    max-height: 90%
-    h1
+    color: $black
+    min-width: 300px
+    header
+      width: 100%
+      margin: 0
+    h2
+      position: relative
+      color: $white
       font-family: $title-font
       font-weight: normal
+      aside 
+        display: inline-block
+        position: absolute
+        right: 0
+        font-size: 1em
+        i
+          margin-left: .5em
+    h3
+      margin: 0
     .featherlight-close-icon
       position: fixed
+      border-radius: 0 0 0 .4em
+    a
+      color: $grey2
 
-/* mix default style for items */
+
+/* mixitup default style for items */
 #Container .mix
   display: none
-
 
     

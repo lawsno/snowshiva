@@ -3,11 +3,17 @@
 /* Color variables - so you know what's what */
 /* Cast colors to semantic variables, so you know what goes where */
 /* Text effects & shadows/highlights */
+.clearfix {
+  overflow: auto; }
+
 /* media query variables */
 /* Fonts */
 /* Color variables - so you know what's what */
 /* Cast colors to semantic variables, so you know what goes where */
 /* Text effects & shadows/highlights */
+.clearfix {
+  overflow: auto; }
+
 body.resume {
   background-color: #f3f3f3;
   color: #474747; }
@@ -31,8 +37,11 @@ body.resume {
   body.resume .experience-logo {
     position: absolute;
     left: 100%; }
-  body.resume footer a {
-    color: #f3f3f3; }
+  body.resume footer {
+    border-color: #3a3a3a;
+    background-color: #474747; }
+    body.resume footer a {
+      color: #f3f3f3; }
   @media only screen and (min-width: 480px) {
     body.resume section {
       width: 83.05085%;
@@ -62,6 +71,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   background: #474747 url("/img/01x4.png") fixed;
+  transition: background-color 0.5s;
   color: #999999; }
   body:after {
     content: " ";
@@ -209,7 +219,10 @@ a.to-portfolio {
   footer {
     position: fixed;
     bottom: 0;
-    left: 0; } }
+    left: 0; }
+
+  .featherlight div.featherlight-content {
+    width: 60%; } }
 @media only screen and (min-width: 768px) {
   nav, header, section {
     width: 83.05085%;
@@ -233,18 +246,36 @@ a.to-portfolio {
     margin-left: 10.55325%; } }
 /* Featherlight lightbox overrides */
 .featherlight div.featherlight-content {
+  font-size: 0.9em;
   padding: 10px;
   border: 3px solid #3a3a3a;
   border-radius: 0.4em;
   background-color: #474747;
-  color: #f3f3f3;
-  max-height: 90%; }
-  .featherlight div.featherlight-content h1 {
+  color: black;
+  min-width: 300px; }
+  .featherlight div.featherlight-content header {
+    width: 100%;
+    margin: 0; }
+  .featherlight div.featherlight-content h2 {
+    position: relative;
+    color: #f3f3f3;
     font-family: "Slabo 27px", serif;
     font-weight: normal; }
+    .featherlight div.featherlight-content h2 aside {
+      display: inline-block;
+      position: absolute;
+      right: 0;
+      font-size: 1em; }
+      .featherlight div.featherlight-content h2 aside i {
+        margin-left: 0.5em; }
+  .featherlight div.featherlight-content h3 {
+    margin: 0; }
   .featherlight div.featherlight-content .featherlight-close-icon {
-    position: fixed; }
+    position: fixed;
+    border-radius: 0 0 0 0.4em; }
+  .featherlight div.featherlight-content a {
+    color: #897f82; }
 
-/* mix default style for items */
+/* mixitup default style for items */
 #Container .mix {
   display: none; }

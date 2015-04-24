@@ -3,6 +3,9 @@
 /* Color variables - so you know what's what */
 /* Cast colors to semantic variables, so you know what goes where */
 /* Text effects & shadows/highlights */
+.clearfix {
+  overflow: auto; }
+
 body.resume {
   background-color: #f3f3f3;
   color: #474747; }
@@ -26,8 +29,11 @@ body.resume {
   body.resume .experience-logo {
     position: absolute;
     left: 100%; }
-  body.resume footer a {
-    color: #f3f3f3; }
+  body.resume footer {
+    border-color: #3a3a3a;
+    background-color: #474747; }
+    body.resume footer a {
+      color: #f3f3f3; }
   @media only screen and (min-width: 480px) {
     body.resume section {
       width: 83.05085%;
